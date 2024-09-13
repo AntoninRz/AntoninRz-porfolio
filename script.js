@@ -44,3 +44,30 @@ function createProgressCircle(circleId, textId, percentage) {
   createProgressCircle(document.getElementById('skill-circle-14'), 'percentage-text-5', 0.30);
   createProgressCircle(document.getElementById('skill-circle-15'), 'percentage-text-5', 0.65);
   
+  // Services
+  new Swiper('.card-wrapper', {
+    loop: true,
+  
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        1024: {
+            slidesPerView: 3
+        },
+    }
+  });
