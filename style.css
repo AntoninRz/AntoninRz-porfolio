@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -347,7 +348,7 @@ h1 #name {
 
 .activite {
     margin: 0 20px 20px 0;
-    height: 100px;
+    height: fit-content;
     padding: 5px 20px;
     border: #ffac116c solid 0.5px;
 }
@@ -513,10 +514,10 @@ h1 #name {
 }
 
 .card-link:hover {
-    border-color: #5372f0;
+    border-color: #ffab11;
     .card-button {
         color: white;
-        background-color: #5372f0;
+        background-color: #ffab11;
     }
 }
 
@@ -606,7 +607,7 @@ h1 #name {
 /* *********** projets *************** */
 
 #projects .title-subtitle {
-    width: 400px;
+    width: 100%;
     padding: 30px 0;
 }
 
@@ -748,5 +749,129 @@ h1 #name {
 @media screen and (max-width: 425px) {
     .project {
         height: 200px;
+    }
+}
+
+/* ********** Footer ************* */
+
+footer {
+    margin-top: 30px;
+    width: 100%;
+}
+
+footer .content {
+    width: 100%;
+    row-gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+}
+.footer-content .contact {
+    width: 50%;
+}
+.coordonnees h3 {
+    padding: 10px;
+}
+
+.coordonnees {
+    padding: 10px 0;
+}
+
+.mes-coordonnees p {
+    padding: 10px 0;
+}
+.mes-coordonnees p i {
+    color: #ffab11;
+    font-size: x-large;
+}
+
+.mes-coordonnees p span {
+    margin-right: 10px;
+}
+
+.formulaire-contact {
+    width: 50%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form .name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .name input {
+    width: 250px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    background-color: #212121;
+    color: #8f8d8d;
+    padding: 0 10px;
+    border: none;
+    border-radius: 50px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    background-color: #212121;
+    color: #8f8d8d;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+    .footer-content .contact {
+        width: 40%;
+    }
+    .formulaire-contact {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1115px) {
+    form .name input {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 810px) {
+form .name {
+    flex-direction: column;
+}
+    form .name input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-content .contact {
+        width: 100%;
+    }
+    .formulaire-contact {
+        width: 100%;
+    }
+    .submit {
+        display: flex;
+        justify-content: center;
     }
 }
