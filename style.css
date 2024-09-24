@@ -530,35 +530,14 @@ h1 #name {
 
 .badge {
     text-align-last: justify;
-    color: #5372f0;
+    color: #ffab11;
+    background-color: #79defa83;
     padding: 8px 16px;
     font-size: 0.95rem;
     font-weight: 500;
     margin: 16px 0 18px;
-    background: #DDE4FF;
     width: fit-content;
     border-radius: 50px;
-}
-
-.developpeur {
-    color: cadetblue;
-    background-color: coral;
-}
-.designer {
-    color: aqua;
-    background-color: antiquewhite;
-}
-.integrateur {
-    color: blueviolet;
-    background-color: burlywood;
-}
-.web-master {
-    color: darkorange;
-    background-color: dodgerblue;
-}
-.tueur {
-    color: forestgreen;
-    background-color: floralwhite;
 }
 
 .card-title {
@@ -624,7 +603,8 @@ h1 #name {
 }
 
 .proj-1 {
-    background-image: url(./assets/medias/Projets/Untitled-7.png);
+    border-right: #ffab11 2px solid;
+    background-image: url(./assets/medias/Projets/CIW.jpg);
 }
 .proj-1:hover{
     .pap-1 {
@@ -633,7 +613,8 @@ h1 #name {
 }
 
 .proj-2 {
-    background-image: url(./assets/medias/Projets/Untitled-4.png);
+    border-right: #ffab11 2px solid;
+    background-image: url(./assets/medias/Projets/Branding.jpg);
 }
 .proj-2:hover{
     .pap-2 {
@@ -642,7 +623,8 @@ h1 #name {
 }
 
 .proj-3 {
-    background-image: url(./assets/medias/Projets/Untitled-5.png);
+    border-right: #ffab11 2px solid;
+    background-image: url(./assets/medias/Projets/Hero-slide.jpg);
 }
 .proj-3:hover{
     .pap-3 {
@@ -651,7 +633,7 @@ h1 #name {
 }
 
 .proj-4 {
-    background-image: url(./assets/medias/Projets/Untitled-6.png);
+    background-image: url(./assets/medias/Projets/Miro.jpg);
 }
 .proj-4:hover{
     .pap-4 {
@@ -660,7 +642,8 @@ h1 #name {
 }
 
 .proj-5 {
-    background-image: url(./assets/medias/Projets/Untitled-7.png);
+    border-right: #ffab11 2px solid;
+    background-image: url(./assets/medias/Projets/Permaculture.jpg);
 }
 .proj-5:hover{
     .pap-5 {
@@ -669,7 +652,8 @@ h1 #name {
 }
 
 .proj-6 {
-    background-image: url(./assets/medias/Projets/Untitled-4.png);
+    border-right: #ffab11 2px solid;
+    background-image: url(./assets/medias/Projets/Pirus.jpg);
 }.proj-6:hover{
     .pap-6 {
         display: flex;
@@ -677,7 +661,8 @@ h1 #name {
 }
 
 .proj-7 {
-    background-image: url(./assets/medias/Projets/Untitled-5.png);
+    border-right: #ffab11 2px solid;
+    background-image: url(./assets/medias/Projets/web-app.jpg);
 }.proj-7:hover{
     .pap-7 {
         display: flex;
@@ -685,7 +670,7 @@ h1 #name {
 }
 
 .proj-8 {
-    background-image: url(./assets/medias/Projets/Untitled-6.png);
+    background-image: url(./assets/medias/Projets/Portefolio.jpg);
 }.proj-8:hover{
     .pap-8 {
         display: flex;
@@ -695,36 +680,22 @@ h1 #name {
 
 .paperclips {
     display: none;
-    color: #f3f3f3;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
 
 .info {
-    text-transform: uppercase;
-    row-gap: 20px;
     width: 90%;
     height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.80);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-.info h3 {
-    color: #ffffff;
-}
-
-.info hr {
-    border-radius: 50px;
-    width: 30px;
-    height: 3px;
-    background-color: #f3f3f3
-}
-
-.twitter {
+.info-projet {
     color: #ffffff;
     row-gap: 25px;
     width: 100%;
@@ -736,8 +707,12 @@ h1 #name {
     align-items: center;
 }
 
-.twitter a{
+.info-projet a{
     color: #29c5f2;
+}
+
+.info-projet p {
+    text-align: center;
 }
 
 
