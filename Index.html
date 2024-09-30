@@ -1,480 +1,632 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-    <script src="https://kit.fontawesome.com/1fd739c86e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/1fd739c86e.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/progressbar.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
     <script src="script.js" defer></script>
 
-
     <title>Antonin Portfolio</title>
-</head>
-<body>
-        <!-- Navigation -->
-        <nav>
-        <div class="container">
-            <div class="navigation">
-                <div class="brand">
-                    <a href="">
-                        <img src="./assets/medias/Profil.jpg" alt="profil">
-                        <p><span>Dé-</span>full</p>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="container">
+        <div class="navigation">
+          <div class="brand">
+            <a href="">
+              <img src="./assets/medias/Profil.jpg" alt="profil" />
+              <p><span>Dé-</span>full</p>
+            </a>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="#">Acceuil</a></li>
+              <li><a href="#info-perso">à propos</a></li>
+              <li><a href="#skill">Compétences</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projets">Projets</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="burger">
+            <a href="">&#9776;</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header">
+          <div class="profil">
+            <div class="bg1"></div>
+            <div class="bg2"></div>
+            <img src="./assets/medias/Profil.jpg" alt="photo de profil" />
+          </div>
+          <div class="title-description">
+            <h1>
+              <span id="name">
+                <hr />
+                Antonin &nbsp;<span>RAZAFISON</span>
+              </span>
+              <span>Développeur web</span>
+            </h1>
+            <p>
+              Passionné par l'informatique et le développement web, je crée des
+              interfaces utilisateur intuitives et réactives qui offrent des
+              expériences exceptionnelles. Avec une expertise en HTML, CSS,
+              JavaScript et les frameworks modernes, je transforme les idées en
+              réalité numérique, en alliant esthétique et fonctionnalité pour
+              chaque projet.
+            </p>
+            <a href="#info-perso" class="button">
+              <button type="button" class="primary-button">Me connaître</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Information personnel -->
+    <section id="info-perso">
+      <div class="container">
+        <div class="info-perso-content">
+          <div class="title">
+            <h2>à propos <span>de moi</span></h2>
+          </div>
+          <div class="info-perso">
+            <div class="info-content">
+              <div class="info-perso-title">
+                <h3>Informations personnelles</h3>
+              </div>
+              <div class="mes-infos">
+                <div class="infos-content">
+                  <p><span>Nom :</span> RAZAFISON</p>
+                  <p><span>Prénom :</span> Antonin</p>
+                  <p><span>Âges :</span> 29 ans</p>
+                  <p><span>Nationalité :</span> Malagasy</p>
+                  <p><span>E-mail :</span> toninrazafison@gmail.com</p>
+                </div>
+                <div class="infos-content">
+                  <p><span>Téléphone :</span> +261 34 66 452 54</p>
+                  <p><span>GitHub :</span> AntoninRz</p>
+                  <p><span>Facebook :</span> Antonin Razafison</p>
+                  <p><span>LinkedIn :</span> Antonin Razafison</p>
+                  <p><span>Freelance :</span> Disponible</p>
+                </div>
+              </div>
+              <div class="cv">
+                <a
+                  href="https://github.com/AntoninRz/Mon-CV"
+                  target="_blank"
+                  class="button"
+                >
+                  <button class="download-button">
+                    <div class="docs">
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="20"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="blue"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="css-i6dzq1"
+                      >
+                        <path
+                          d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                        ></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                      </svg>
+                      Télécharger mon CV
+                    </div>
+                    <div class="download">
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="css-i6dzq1"
+                      >
+                        <path
+                          d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+                        ></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                      </svg>
+                    </div>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="activites">
+              <div class="activite">
+                <p class="number">+ 02</p>
+                <div class="activite-info">
+                  <hr />
+                  <p>
+                    Années <br />
+                    d'expériences
+                  </p>
+                </div>
+              </div>
+              <div class="activite">
+                <p class="number">+ 20</p>
+                <div class="activite-info">
+                  <hr />
+                  <p>Projets <br />réalisés</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="skills">
+      <div class="container">
+        <h2>Mes <span>Compétences</span></h2>
+        <h3>Web codage</h3>
+        <div class="skills">
+          <div class="skill-content">
+            <div id="skill-circle-1" class="skill">
+              <img src="./assets/medias/logos/html-5.png" alt="Logo html" />
+            </div>
+            <p>HTML 5</p>
+          </div>
+          <div class="skill-content">
+            <div id="skill-circle-2" class="skill">
+              <img src="./assets/medias/logos/css.png" alt="Logo CSS" />
+            </div>
+            <p>CSS 3</p>
+          </div>
+          <div class="skill-content">
+            <div id="skill-circle-3" class="skill">
+              <img
+                src="./assets/medias/logos/Javascript.png"
+                alt="Logo JavaScript"
+              />
+            </div>
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-content">
+            <div id="skill-circle-4" class="skill">
+              <img src="./assets/medias/logos/php.png" alt="Logo PHP" />
+            </div>
+            <p>PHP</p>
+          </div>
+          <div class="skill-content">
+            <div id="skill-circle-5" class="skill">
+              <img src="./assets/medias/logos/mysql.png" alt="Logo mysql" />
+            </div>
+            <p>MySQL</p>
+          </div>
+        </div>
+
+        <h3>FramWorks / No-code / CMS</h3>
+        <div class="skills">
+          <div class="skill-content">
+            <div id="skill-circle-6" class="skill">
+              <img src="./assets/medias/logos/react.png" alt="Logo react" />
+            </div>
+            <p>ReactJs</p>
+          </div>
+          <div class="skill-content">
+            <div id="skill-circle-7" class="skill">
+              <img
+                src="./assets/medias/logos/tailwind-css.png"
+                alt="Logo tailwind-css"
+              />
+            </div>
+            <p>Tailwind-css</p>
+          </div>
+          <div class="skill-content">
+            <div id="skill-circle-8" class="skill">
+              <img
+                src="./assets/medias/logos/Bootstrap.png"
+                alt="Logo Bootstrap"
+              />
+            </div>
+            <p>Bootstrap</p>
+          </div>
+          <div class="skill-content">
+            <div id="skill-circle-9" class="skill">
+              <img src="./assets/medias/logos/bubble.png" alt="Logo Bubble" />
+            </div>
+            <p>Bubble</p>
+          </div>
+          <div class="skill-content">
+            <div id="skill-circle-10" class="skill">
+              <img
+                src="./assets/medias/logos/Wordpress.png"
+                alt="Logo WordPress"
+              />
+            </div>
+            <p>WordPress</p>
+          </div>
+        </div>
+
+        <h3>Design</h3>
+        <div class="skills">
+          <div class="skill-content">
+            <div id="skill-circle-11" class="skill">
+              <img src="./assets/medias/logos/figma.png" alt="Logo figma" />
+            </div>
+            <p>Figma</p>
+          </div>
+          <div class="skill-content">
+            <div id="skill-circle-12" class="skill">
+              <img
+                src="./assets/medias/logos/photoshop.png"
+                alt="Logo photoshop"
+              />
+            </div>
+            <p>Photoshop</p>
+          </div>
+          <div class="skill-content">
+            <div id="skill-circle-13" class="skill">
+              <img
+                src="./assets/medias/logos/Illustrator.png"
+                alt="Logo Illustrator"
+              />
+            </div>
+            <p>Illustrator</p>
+          </div>
+          <div class="skill-content">
+            <div id="skill-circle-14" class="skill">
+              <img src="./assets/medias/logos/XD.png" alt="Logo Adobe XD" />
+            </div>
+            <p>Adobe XD</p>
+          </div>
+          <div class="skill-content">
+            <div id="skill-circle-15" class="skill">
+              <img src="./assets/medias/logos/Canva.png" alt="Logo Canva" />
+            </div>
+            <p>Canva</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projects">
+      <div class="container">
+        <div class="intro">
+          <div class="title-subtitle">
+            <h2>Mes <span>Réalisations</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="projects">
+        <div class="project proj-1">
+          <div class="paperclips pap-1">
+            <div class="info">
+              <a href="#">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+        <div class="project proj-2">
+          <div class="paperclips pap-2">
+            <div class="info">
+              <a href="#">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+        <div class="project proj-3">
+          <div class="paperclips pap-3">
+            <div class="info">
+              <a href="#">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+        <div class="project proj-4">
+          <div class="paperclips pap-4">
+            <div class="info">
+              <a href="#">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-projet">
+        <h3>Vous voulez voir mes Projets</h3>
+        <p>
+          Il vous suffit juste de cliquer sur le lien qui apparaît quand vous
+          passez sur une image. <br />
+          Ou bien, vous pouvez voir mon profil "GitHub" en cliquant sur le lien
+          en dessous
+        </p>
+        <a href="https://github.com/AntoninRz">
+          <button type="button" class="btn-github">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.99992 1.33331C7.12444 1.33331 6.25753 1.50575 5.4487 1.84078C4.63986 2.17581 3.90493 2.66688 3.28587 3.28593C2.03563 4.53618 1.33325 6.23187 1.33325 7.99998C1.33325 10.9466 3.24659 13.4466 5.89325 14.3333C6.22659 14.3866 6.33325 14.18 6.33325 14C6.33325 13.8466 6.33325 13.4266 6.33325 12.8733C4.48659 13.2733 4.09325 11.98 4.09325 11.98C3.78659 11.2066 3.35325 11 3.35325 11C2.74659 10.5866 3.39992 10.6 3.39992 10.6C4.06659 10.6466 4.41992 11.2866 4.41992 11.2866C4.99992 12.3 5.97992 12 6.35992 11.84C6.41992 11.4066 6.59325 11.1133 6.77992 10.9466C5.29992 10.78 3.74659 10.2066 3.74659 7.66665C3.74659 6.92665 3.99992 6.33331 4.43325 5.85998C4.36659 5.69331 4.13325 4.99998 4.49992 4.09998C4.49992 4.09998 5.05992 3.91998 6.33325 4.77998C6.85992 4.63331 7.43325 4.55998 7.99992 4.55998C8.56659 4.55998 9.13992 4.63331 9.66659 4.77998C10.9399 3.91998 11.4999 4.09998 11.4999 4.09998C11.8666 4.99998 11.6333 5.69331 11.5666 5.85998C11.9999 6.33331 12.2533 6.92665 12.2533 7.66665C12.2533 10.2133 10.6933 10.7733 9.20659 10.94C9.44659 11.1466 9.66659 11.5533 9.66659 12.1733C9.66659 13.0666 9.66659 13.7866 9.66659 14C9.66659 14.18 9.77325 14.3933 10.1133 14.3333C12.7599 13.44 14.6666 10.9466 14.6666 7.99998C14.6666 7.1245 14.4941 6.25759 14.1591 5.44876C13.8241 4.63992 13.333 3.90499 12.714 3.28593C12.0949 2.66688 11.36 2.17581 10.5511 1.84078C9.7423 1.50575 8.8754 1.33331 7.99992 1.33331V1.33331Z"
+                fill="currentcolor"
+              ></path>
+            </svg>
+            <span>Voir mon GitHub</span>
+          </button>
+        </a>
+      </div>
+
+      <div class="projects">
+        <div class="project proj-5">
+          <div class="paperclips pap-5">
+            <div class="info">
+              <a href="#">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+        <div class="project proj-6">
+          <div class="paperclips pap-6">
+            <div class="info">
+              <a href="#">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+        <div class="project proj-7">
+          <div class="paperclips pap-7">
+            <div class="info">
+              <a href="#">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+        <div class="project proj-8">
+          <div class="paperclips pap-8">
+            <div class="info">
+              <a href="#">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+      <div class="title">
+        <h2>Mes <span>services</span></h2>
+      </div>
+      <div class="services-content swiper">
+        <div class="card-wrapper">
+          <ul class="card-list swiper-wrapper">
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img
+                  class="card-image"
+                  src="./assets/medias/Experience/Experience-1.jpg"
+                  alt="Experience"
+                />
+                <p class="badge developpeur">Développement web</p>
+                <h3 class="card-title">
+                  Je développe des sites web statiques pour les personnes qui
+                  ont besoin de site vitrine.
+                </h3>
+                <button type="button" class="card-button">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img
+                  class="card-image"
+                  src="./assets/medias/Experience/Experience-2.jpg"
+                  alt="Experience"
+                />
+                <p class="badge designer">Création de portefolio</p>
+                <h3 class="card-title">
+                  Je crée des portefolio pour ceux qui ont on besoin dans leur
+                  vie professionnelle.
+                </h3>
+                <button type="button" class="card-button">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img
+                  class="card-image"
+                  src="./assets/medias/Experience/Experience-3.jpg"
+                  alt="Experience"
+                />
+                <p class="badge integrateur">Intégration web</p>
+                <h3 class="card-title">
+                  J'intègre vos maquettes web en les codants avec des langages
+                  de développement web.
+                </h3>
+                <button type="button" class="card-button">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img
+                  class="card-image"
+                  src="./assets/medias/Experience/Experience-4.jpg"
+                  alt="Experience"
+                />
+                <p class="badge web-master">Mise à jour de site web</p>
+                <h3 class="card-title">
+                  Je peux faire le mise à jour de votre site web pour que vos
+                  contenus soit à jour.
+                </h3>
+                <button type="button" class="card-button">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img
+                  class="card-image"
+                  src="./assets/medias/Experience/Experience-5.jpg"
+                  alt="Experience"
+                />
+                <p class="badge tueur">Intégration de contenus web</p>
+                <h3 class="card-title">
+                  Je suis en mésure d'intégrer vos nouveaux contenus dans votre
+                  site web existant.
+                </h3>
+                <button type="button" class="card-button">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img
+                  class="card-image"
+                  src="./assets/medias/Experience/Experience-6.jpg"
+                  alt="Experience"
+                />
+                <p class="badge tueur">Web designer</p>
+                <h3 class="card-title">
+                  Je peux vous créer un page web bien designé et animé pour une
+                  bonne expérience utilisateur.
+                </h3>
+                <button type="button" class="card-button">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </a>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <div class="button swiper-button-prev"></div>
+          <div class="button swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="content">
+          <div class="title">
+            <h2>Me&nbsp;<span>Contacter</span></h2>
+          </div>
+          <div class="footer-content">
+            <div class="contact">
+              <div class="coordonnees">
+                <h3>Mes coordonnées</h3>
+                <p>
+                  Vous trouverez ici mes coordonnées pour me contacter. <br />
+                  Mais vous pouvez aussi m'envoyer un message directement.
+                </p>
+              </div>
+              <div class="mes-coordonnees">
+                <p>
+                  <span><i class="fa-solid fa-phone"></i></span> +261 34 66 452
+                  54
+                </p>
+                <p>
+                  <span><i class="fa-solid fa-location-dot"></i></span
+                  >Ambatoroka, Antananarivo Madagascar
+                </p>
+                <p>
+                  <span><i class="fa-solid fa-envelope"></i></span>
+                  toninrazafison@gmail.com
+                </p>
+              </div>
+            </div>
+            <div class="formulaire-contact">
+              <form method="post">
+                <div class="formulaire">
+                  <div class="name">
+                    <div>
+                      <label for="#nom">
+                        <input type="text" id="nom" placeholder="Ton Nom" />
+                      </label>
+                    </div>
+                    <div>
+                      <label for="#prenom">
+                        <input
+                          type="text"
+                          id="prenom"
+                          placeholder="Ton prénom"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="objet">
+                    <div>
+                      <label for="#objet">
+                        <input
+                          type="text"
+                          id="objet"
+                          placeholder="Votre sujet"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="message">
+                    <div>
+                      <label for="#message">
+                        <textarea
+                          name="sujet"
+                          id="message"
+                          placeholder="Votre message"
+                        ></textarea>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="submit">
+                    <a href="#" class="button">
+                      <button type="button" class="animated-button">
+                        <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                          ></path>
+                        </svg>
+                        <span class="text">Envoyer le message</span>
+                        <span class="circle"></span>
+                        <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                          ></path>
+                        </svg>
+                      </button>
+                                              
                     </a>
+                  </div>
                 </div>
-                <div class="links">
-                    <ul>
-                        <li><a href="#">Acceuil</a></li>
-                        <li><a href="#info-perso">à propos</a></li>
-                        <li><a href="#skill">Compétences</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#projets">Projets</a></li>
-                        <li><a href="#contacts">Contacts</a></li>
-                    </ul>
-                </div>
-                <div class="burger">
-                    <a href="">&#9776;</a>
-                </div>
+              </form>
             </div>
+          </div>
         </div>
-        </nav>
-
-        <!-- Header -->
-        <header>
-        <div class="container">
-            <div class="header">
-                <div class="profil">
-                    <div class="bg1"></div>
-                    <div class="bg2"></div>
-                    <img src="./assets/medias/Profil.jpg" alt="photo de profil">
-                </div>
-                <div class="title-description">
-                    <h1>
-                        <span id="name">
-                            <hr>Antonin &nbsp;<span>RAZAFISON</span>
-                        </span>
-                        <span>Développeur web</span>
-                    </h1>
-                    <p>Passionné par l'informatique et le développement web, je crée des interfaces utilisateur intuitives et réactives qui offrent des expériences exceptionnelles. Avec une expertise en HTML, CSS, JavaScript et les frameworks modernes, je transforme les idées en réalité numérique, en alliant esthétique et fonctionnalité pour chaque projet.</p>
-                    <a href="#info-perso" class="button">
-                        <button type="button" class="primary-button">
-                            Me connaître
-                        </button>
-                        <div class="icon"><i class="fa-solid fa-arrow-right"></i></div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        </header>
-
-        <!-- Information personnel -->
-        <section id="info-perso">
-            <div class="container">
-                <div class="info-perso-content">
-                    <div class="title">
-                        <h2>à propos <span>de moi</span></h2>
-                    </div>
-                    <div class="info-perso">
-                        <div class="info-content">
-                            <div class="info-perso-title">
-                                <h3>Informations personnelles</h3>
-                            </div>
-                            <div class="mes-infos">
-                                <div class="infos-content">
-                                    <p><span>Nom :</span> RAZAFISON</p>
-                                    <p><span>Prénom :</span> Antonin</p>
-                                    <p><span>Âges :</span> 29 ans</p>
-                                    <p><span>Nationalité :</span> Malagasy</p>
-                                    <p><span>E-mail :</span> toninrazafison@gmail.com</p>
-                                </div>
-                                <div class="infos-content">
-                                    <p><span>Téléphone :</span> +261 34 66 452 54</p>
-                                    <p><span>GitHub :</span> AntoninRz</p>
-                                    <p><span>Facebook :</span> Antonin Razafison</p>
-                                    <p><span>LinkedIn :</span> Antonin Razafison</p>
-                                    <p><span>Freelance :</span> Disponible</p>
-                                </div>
-                            </div>
-                            <div class="cv">
-                                <a href="https://github.com/AntoninRz/Mon-CV" target="_blank" class="button">
-                                    <button type="button" class="primary-button">
-                                        Télécharger mon CV
-                                    </button>
-                                    <div class="icon"><i class="fa-solid fa-download"></i></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="activites">
-                            <div class="activite">
-                                <p class="number">+ 02</p>
-                                <div class="activite-info">
-                                    <hr>
-                                    <p>Années <br> d'expériences</p>
-                                </div>
-                            </div>
-                            <div class="activite">
-                                <p class="number">+ 20</p>
-                                <div class="activite-info">
-                                    <hr>
-                                    <p>Projets <br>réalisés</p>
-                                </div>
-                            </div>                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Compétences -->
-        <section id="skills">
-        <div class="container">
-            <h2>Mes <span>Compétences</span></h2>
-            <h3>Web codage</h3>
-            <div class="skills">
-                <div class="skill-content">
-                    <div id="skill-circle-1" class="skill">
-                        <img src="./assets/medias/logos/html-5.png" alt="Logo html">
-                    </div>
-                    <p>HTML 5</p>
-                </div>
-                <div class="skill-content">
-                    <div id="skill-circle-2" class="skill">
-                        <img src="./assets/medias/logos/css.png" alt="Logo CSS">
-                    </div>
-                    <p>CSS 3</p>
-                </div>
-                <div class="skill-content">
-                    <div id="skill-circle-3" class="skill"><img src="./assets/medias/logos/Javascript.png" alt="Logo JavaScript"></div>
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill-content">
-                    <div id="skill-circle-4" class="skill"><img src="./assets/medias/logos/php.png" alt="Logo PHP"></div>
-                    <p>PHP</p>
-                </div>
-                <div class="skill-content">
-                    <div id="skill-circle-5" class="skill"><img src="./assets/medias/logos/mysql.png" alt="Logo mysql"></div>
-                    <p>MySQL</p>
-                </div>
-            </div>
-
-            <h3>FramWorks / No-code / CMS</h3>
-            <div class="skills">
-                <div class="skill-content">
-                    <div id="skill-circle-6" class="skill">
-                        <img src="./assets/medias/logos/react.png" alt="Logo react">
-                    </div>
-                    <p>ReactJs</p>
-                </div>
-                <div class="skill-content">
-                    <div id="skill-circle-7" class="skill">
-                        <img src="./assets/medias/logos/tailwind-css.png" alt="Logo tailwind-css">
-                    </div>
-                    <p>Tailwind-css</p>
-                </div>
-                <div class="skill-content">
-                    <div id="skill-circle-8" class="skill"><img src="./assets/medias/logos/Bootstrap.png" alt="Logo Bootstrap"></div>
-                    <p>Bootstrap</p>
-                </div>
-                <div class="skill-content">
-                    <div id="skill-circle-9" class="skill"><img src="./assets/medias/logos/bubble.png" alt="Logo Bubble"></div>
-                    <p>Bubble</p>
-                </div>
-                <div class="skill-content">
-                    <div id="skill-circle-10" class="skill"><img src="./assets/medias/logos/Wordpress.png" alt="Logo WordPress"></div>
-                    <p>WordPress</p>
-                </div>
-            </div>
-
-            <h3>Design</h3>
-            <div class="skills">
-                <div class="skill-content">
-                    <div id="skill-circle-11" class="skill">
-                        <img src="./assets/medias/logos/figma.png" alt="Logo figma">
-                    </div>
-                    <p>Figma</p>
-                </div>
-                <div class="skill-content">
-                    <div id="skill-circle-12" class="skill">
-                        <img src="./assets/medias/logos/photoshop.png" alt="Logo photoshop">
-                    </div>
-                    <p>Photoshop</p>
-                </div>
-                <div class="skill-content">
-                    <div id="skill-circle-13" class="skill"><img src="./assets/medias/logos/Illustrator.png" alt="Logo Illustrator"></div>
-                    <p>Illustrator</p>
-                </div>
-                <div class="skill-content">
-                    <div id="skill-circle-14" class="skill"><img src="./assets/medias/logos/XD.png" alt="Logo Adobe XD"></div>
-                    <p>Adobe XD</p>
-                </div>
-                <div class="skill-content">
-                    <div id="skill-circle-15" class="skill"><img src="./assets/medias/logos/Canva.png" alt="Logo Canva"></div>
-                    <p>Canva</p>
-                </div>
-            </div>
-        </div>
-        </section>
-        
-        <!-- Projets -->
-        <section id="projects">
-            <div class="container">
-                <div class="intro">
-                    <div class="title-subtitle">
-                        <h2>Mes <span>Réalisations</span></h2>
-                    </div>  
-                </div>
-            </div>
-            <div class="projects">
-                <div class="project proj-1">
-                    <div class="paperclips pap-1">
-                        <div class="info">
-                            <a href="#">Voir le projet</a>
-                        </div>  
-                    </div>
-                </div>
-                <div class="project proj-2">
-                    <div class="paperclips pap-2">
-                        <div class="info">
-                            <a href="#">Voir le projet</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project proj-3">
-                    <div class="paperclips pap-3">
-                        <div class="info">
-                            <a href="#">Voir le projet</a>
-                        </div>  
-                    </div>
-                </div>
-                <div class="project proj-4">
-                    <div class="paperclips pap-4">
-                        <div class="info">
-                            <a href="#">Voir le projet</a>
-                        </div>  
-                    </div>
-                </div>
-            </div>
-    
-            <div class="info-projet">
-                <h3>Vous voulez voir mes Projets</h3>
-                <p>Il vous suffit juste de cliquer sur le lien qui apparaît quand vous passez sur une image. <br>
-                Ou bien, vous pouvez voir mon profil "GitHub" en cliquant sur le lien en dessous </p>
-                <a href="https://github.com/AntoninRz">Mon GitHub</a>
-            </div>
-    
-            <div class="projects">
-                <div class="project proj-5">
-                    <div class="paperclips pap-5">
-                        <div class="info">
-                            <a href="#">Voir le projet</a>
-                        </div>  
-                    </div>
-                </div>
-                <div class="project proj-6">
-                    <div class="paperclips pap-6">
-                        <div class="info">
-                            <a href="#">Voir le projet</a>
-                        </div>  
-                    </div>
-                </div>
-                <div class="project proj-7">
-                    <div class="paperclips pap-7">
-                        <div class="info">
-                            <a href="#">Voir le projet</a>
-                        </div>  
-                    </div>
-                </div>
-                <div class="project proj-8">
-                    <div class="paperclips pap-8">
-                        <div class="info">
-                            <a href="#">Voir le projet</a>
-                        </div>  
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services -->
-        <section class="services">
-            
-                <div class="title">
-                    <h2>Mes <span>services</span></h2>
-                </div>
-                <div class="services-content swiper">
-                    <div class="card-wrapper">
-                        <ul class="card-list swiper-wrapper">
-                          <li class="card-item swiper-slide">
-                            <a href="#" class="card-link">
-                              <img
-                                class="card-image"
-                                src="./assets/medias/Experience/Experience-1.jpg"
-                                alt="Experience"
-                              />
-                              <p class="badge developpeur">Développement web</p>
-                              <h3 class="card-title">
-                                Je développe des sites web statiques pour les personnes qui ont besoin de site vitrine.
-                              </h3>
-                              <button type="button" class="card-button">
-                                <i class="fa-solid fa-arrow-right"></i>
-                              </button>
-                            </a>
-                          </li>
-                          <li class="card-item swiper-slide">
-                            <a href="#" class="card-link">
-                              <img
-                                class="card-image"
-                                src="./assets/medias/Experience/Experience-2.jpg"
-                                alt="Experience"
-                              />
-                              <p class="badge designer">Création de portefolio</p>
-                              <h3 class="card-title">
-                                Je crée des portefolio pour ceux qui ont on besoin dans leur vie professionnelle.
-                              </h3>
-                              <button type="button" class="card-button">
-                                <i class="fa-solid fa-arrow-right"></i>
-                              </button>
-                            </a>
-                          </li>
-                          <li class="card-item swiper-slide">
-                            <a href="#" class="card-link">
-                              <img
-                                class="card-image"
-                                src="./assets/medias/Experience/Experience-3.jpg"
-                                alt="Experience"
-                              />
-                              <p class="badge integrateur">Intégration web</p>
-                              <h3 class="card-title">
-                                J'intègre vos maquettes web en les codants avec des langages de développement web.
-                              </h3>
-                              <button type="button" class="card-button">
-                                <i class="fa-solid fa-arrow-right"></i>
-                              </button>
-                            </a>
-                          </li>
-                          <li class="card-item swiper-slide">
-                            <a href="#" class="card-link">
-                              <img
-                                class="card-image"
-                                src="./assets/medias/Experience/Experience-4.jpg"
-                                alt="Experience"
-                              />
-                              <p class="badge web-master">Mise à jour de site web</p>
-                              <h3 class="card-title">
-                                Je peux faire le mise à jour de votre site web pour que vos contenus soit à jour.
-                              </h3>
-                              <button type="button" class="card-button">
-                                <i class="fa-solid fa-arrow-right"></i>
-                              </button>
-                            </a>
-                          </li>
-                          <li class="card-item swiper-slide">
-                            <a href="#" class="card-link">
-                              <img
-                                class="card-image"
-                                src="./assets/medias/Experience/Experience-5.jpg"
-                                alt="Experience"
-                              />
-                              <p class="badge tueur">Intégration de contenus web</p>
-                              <h3 class="card-title">
-                                Je suis en mésure d'intégrer vos nouveaux contenus dans votre site web existant.
-                              </h3>
-                              <button type="button" class="card-button">
-                                <i class="fa-solid fa-arrow-right"></i>
-                              </button>
-                            </a>
-                          </li>
-                          <li class="card-item swiper-slide">
-                            <a href="#" class="card-link">
-                              <img
-                                class="card-image"
-                                src="./assets/medias/Experience/Experience-6.jpg"
-                                alt="Experience"
-                              />
-                              <p class="badge tueur">Web designer</p>
-                              <h3 class="card-title">
-                                Je peux vous créer un page web bien designé et animé pour une bonne expérience utilisateur.
-                              </h3>
-                              <button type="button" class="card-button">
-                                <i class="fa-solid fa-arrow-right"></i>
-                              </button>
-                            </a>
-                          </li>
-                        </ul>
-                        <div class="swiper-pagination"></div>
-                        <div class="button swiper-button-prev"></div>
-                        <div class="button swiper-button-next"></div>
-                      </div>
-                </div>
-            
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <div class="container">
-                <div class="content">
-                    <div class="title">
-                        <h2>Me&nbsp;<span>Contacter</span></h2>
-                    </div>
-                    <div class="footer-content">
-                        <div class="contact">
-                            <div class="coordonnees">
-                                <h3>Mes coordonnées</h3>
-                                <p>Vous trouverez ici mes coordonnées pour me contacter. <br>
-                                Mais vous pouvez aussi m'envoyer un message directement.</p>
-                            </div>
-                            <div class="mes-coordonnees">
-                                <p><span><i class="fa-solid fa-phone"></i></span> +261 34 66 452 54</p>
-                                <p><span><i class="fa-solid fa-location-dot"></i></span>Ambatoroka, Antananarivo Madagascar</p>
-                                <p><span><i class="fa-solid fa-envelope"></i></span> toninrazafison@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="formulaire-contact">
-                            <form method="post">
-                                <div class="formulaire">
-                                    <div class="name">
-                                        <div>
-                                            <label for="#nom">
-                                                <input type="text" id="nom" placeholder="Ton Nom">
-                                            </label>
-                                        </div>
-                                        <div>
-                                            <label for="#prenom">
-                                                <input type="text" id="prenom" placeholder="Ton prénom">
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="objet">
-                                        <div>
-                                            <label for="#objet">
-                                                <input type="text" id="objet" placeholder="Votre sujet">
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="message">
-                                        <div>
-                                            <label for="#message">
-                                                <textarea name="sujet" id="message" placeholder="Votre message"></textarea>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="submit">
-                                        <a href="" class="button">
-                                            <button type="button" class="primary-button">
-                                                Envoyer
-                                            </button>
-                                            <div class="icon"><i class="fa-solid fa-arrow-right"></i></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-</body>
+      </div>
+    </footer>
+  </body>
 </html>

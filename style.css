@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: "Lato", sans-serif;
@@ -228,39 +231,111 @@ h1 #name {
     color: #f6f6f6;
 }
 
-.primary-button {
-    width: 170px;
-    height: 40px;
-    font-size: 15px;
-    color: #f6f6f6;
-    background-color: #111111;
-    border: solid 1px #ffab11;
-    border-radius: 25px;
-}
-
-.primary-button:hover {
-    cursor: pointer;
-    color: #ffab11;
-    font-size: 16px;
-    width: 180px;
-}
-
-.button:hover {
-    color: #8f8d8d;
-}
-
-.button .icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #ffab11;
+/* From Uiverse.io by 212004ALJI */ 
+.primary-button,.primary-button::after {
+    padding: 10px 50px;
+    font-size: 20px;
+    border: solid 2px rgba(255, 172, 17, 0.151);
+    border-radius: 50px;
+    color: white;
+    background-color: transparent;
     position: relative;
-    top: -40px;
-    left: 140px;
-}
+  }
+  
+  .primary-button::after {
+    --move1: inset(50% 50% 50% 50%);
+    --move2: inset(31% 0 40% 0);
+    --move3: inset(39% 0 15% 0);
+    --move4: inset(45% 0 40% 0);
+    --move5: inset(45% 0 6% 0);
+    --move6: inset(14% 0 61% 0);
+    clip-path: var(--move1);
+    content: 'ANTONIN';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+  
+  .primary-button:hover::after {
+    animation: primary 1s;
+    text-shadow: 10 10px 10px black;
+    animation-timing-function: steps(2, end);
+    text-shadow: -3px -3px 0px #ffab11, 3px 3px 0px #E94BE8;
+    background-color: transparent;
+    border: 3px solid #ffab11;
+  }
+  
+  .primary-button:hover {
+    cursor: pointer;
+    text-shadow: -1px -1px 0px #ffab11, 1px 1px 0px #E94BE8;
+  }
+  
+  .primary-button:hover {
+    background-color: transparent;
+    border: 1px solid #ffab11;
+    box-shadow: 0px 10px 10px -10px #ffab11;
+  }
+  
+  @keyframes primary {
+    0% {
+      clip-path: var(--move1);
+      transform: translate(0px,-10px);
+    }
+  
+    10% {
+      clip-path: var(--move2);
+      transform: translate(-10px,10px);
+    }
+  
+    20% {
+      clip-path: var(--move3);
+      transform: translate(10px,0px);
+    }
+  
+    30% {
+      clip-path: var(--move4);
+      transform: translate(-10px,10px);
+    }
+  
+    40% {
+      clip-path: var(--move5);
+      transform: translate(10px,-10px);
+    }
+  
+    50% {
+      clip-path: var(--move6);
+      transform: translate(-10px,10px);
+    }
+  
+    60% {
+      clip-path: var(--move1);
+      transform: translate(10px,-10px);
+    }
+  
+    70% {
+      clip-path: var(--move3);
+      transform: translate(-10px,10px);
+    }
+  
+    80% {
+      clip-path: var(--move2);
+      transform: translate(10px,-10px);
+    }
+  
+    90% {
+      clip-path: var(--move4);
+      transform: translate(-10px,10px);
+    }
+  
+    100% {
+      clip-path: var(--move1);
+      transform: translate(0);
+    }
+  }
+
 
 @media screen and (max-width: 767px) {
     .profil {
@@ -325,19 +400,70 @@ h1 #name {
     color: #8f8d8d;
 }
 
-.cv {
+/* From Uiverse.io by byag-github */ 
+.download-button {
+    position: relative;
+    border: 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    z-index: 1;
+  }
+  
+  .download-button .docs {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: #111111;
+    border: solid 1px #ffab11;
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  
+  .download {
+    cursor: pointer;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    width: 100%;
-}
-
-.cv .primary-button {
-    width: 210px;
-}
-
-.cv .button .icon {
-    left: 180px;
-}
+    max-width: 90%;
+    margin: 0 auto;
+    z-index: -1;
+    border-radius: 4px;
+    transform: translateY(0%);
+    background-color: #ffac11;
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  
+  .download-button:hover .download {
+    transform: translateY(100%);
+  }
+  
+  .download svg polyline,
+  .download svg line {
+    animation: docs 1s infinite;
+  }
+  
+  @keyframes docs {
+    0% {
+      transform: translateY(0%);
+    }
+  
+    50% {
+      transform: translateY(-15%);
+    }
+  
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  
 
 .activites {
     display: flex;
@@ -707,13 +833,39 @@ h1 #name {
     align-items: center;
 }
 
-.info-projet a{
-    color: #29c5f2;
-}
-
-.info-projet p {
-    text-align: center;
-}
+/* From Uiverse.io by Creatlydev */ 
+.btn-github {
+    cursor: pointer;
+    display: flex;
+    gap: 0.5rem;
+    border: none;
+  
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 100px;
+    font-weight: 800;
+    place-content: center;
+  
+    padding: 0.75rem 1rem;
+    font-size: 0.825rem;
+    line-height: 1rem;
+  
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow:
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.04),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+    color: #fff;
+  }
+  
+  .btn-github:hover {
+    box-shadow:
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.08),
+      inset 0 0 0 1px rgba(252, 232, 3, 0.08);
+    color: #ffac11;
+    transform: translate(0, -0.25rem);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: #ffab11 1px solid;
+  }
+  
 
 
 @media screen and (max-width: 768px) {
@@ -810,6 +962,98 @@ textarea {
     border-radius: 20px;
     margin-bottom: 20px;
 }
+
+/* From Uiverse.io by gharsh11032000 */ 
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 36px;
+  margin-bottom: 30px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #f6f6f6;
+  box-shadow: 0 0 0 2px #ffab11;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: #ffab11;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #ffab11;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 50px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #212121;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px #ffac11;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+  
 
 @media screen and (max-width: 1280px) {
     .footer-content .contact {
