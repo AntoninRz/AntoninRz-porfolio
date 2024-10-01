@@ -400,8 +400,10 @@ h1 #name {
     color: #8f8d8d;
 }
 
-/* From Uiverse.io by byag-github */ 
+/* From Uiverse.io by byag-github */
+ 
 .download-button {
+    margin-bottom: 50px;
     position: relative;
     border: 0;
     color: white;
@@ -516,6 +518,11 @@ h1 #name {
     .activites {
         flex-direction: row;
     }
+    .cv a {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+    }
 }
 
 /* ************* Compétences *********** */
@@ -598,13 +605,13 @@ h1 #name {
 
 /* *************** Services ************** */
 
-.services {
+#services {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.services h2 {
+#services h2 {
     margin: 30px 0;
 }
 .services-content {
