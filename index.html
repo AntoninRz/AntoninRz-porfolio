@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/card.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -112,15 +113,10 @@
                 </div>
               </div>
               <div class="cv">
-                <a
-                  href="https://github.com/AntoninRz/Mon-CV"
-                  target="_blank"
-                  class="button"
-                >
-                  <button class="download-button">
+                <a href="https://github.com/AntoninRz/Mon-CV" target="_blank" class="button">
+                  <button type="button" class="download-button">
                     <div class="docs">
-                      <svg
-                        viewBox="0 0 24 24"
+                      <svg viewBox="0 0 24 24"
                         width="20"
                         height="20"
                         stroke="currentColor"
@@ -163,7 +159,7 @@
                 </a>
               </div>
             </div>
-            <div class="activites">
+            <!-- <div class="activites">
               <div class="activite">
                 <p class="number">+ 02</p>
                 <div class="activite-info">
@@ -181,7 +177,32 @@
                   <p>Projets <br />réalisés</p>
                 </div>
               </div>
-            </div>
+            </div> -->
+            <!-- Book -->
+            <div class="book">
+              <p class="text">Je suis un <em>Développeur web</em>, front-end avec un parcours qui  peut vous faire dire <span>"mais c'est quoi ce parcours ?"</span>🤣🤣<br>
+                Je vais vous raconter où j'étais avant d'être un développeur web.😁<br>
+                Après le terminal, on m'appelait <span>"Antoninus le philosophe"</span> 🧐 parce que la philosophie a été ma matière, pas seulement préférée, mais aussi favorite. C'était une grande passion entre moi et les idées philosophiques.🥰 <br>
+                Mais après le bac, je n'ai pas pu m'inscrire aux études philosophiques à l'université.😔😔 Et là, comme la majorité de Malagasy, on se sait pas dans quelle filière on va plonger. Alors, j'ai écouté mes amis et j'ai décidé de faire des études de, pas encore le développement web 😁, mais de <strong>GESTION</strong>.🤓 Mais, j'ai pas pu tenir plus d'une année. On ne s'aime pas lui et moi.😒 <br>
+                Puis une nouvelle année commence à l'université d'Antananarivo, et les inscriptions sont ouvertes. Et c'est là, que j'ai vu au domaine de lettres et sciences humaines, une nouvelle filière qui me parle bien. 😍 Ce n'est pas la philosophie, mais la <strong>Psychologie Sociale et Interculturelle</strong>.😳 <br>
+                Oui, j'ai une <span>licence</span> en Psychologie Sociale et Interculturelle.🧑‍🎓 Mais ça s'arrête là.👨‍🎓 <br>
+                La raison ? J'ai recroisé la passion de ma vie pendant le confinement. C'était évident depuis toujours, mais j'étais encore jeune et naïf.🤣<br> Pendant qu'on a pas de cours lors du passage du fameux COVID-19, j'ai passé mon temps devant mon ordinateur et internet.🤓 Et c'est là que j'ai croisé le regard d'une formation à l'<strong>I.O.T</strong>(Internet of things).🥳 <br> Depuis, j'ai intégré une petite communauté d'informaticien et j'ai rencontré petite à petite des belles et jolies formations dans plusieurs secteurs de l'informatique.😍 <br> Mais après avoir passé du temps avec l'une d'entre elles, je m'en lâche et je passe à une autre. <br>
+                Mais, un jour, une formation de développement web se présente devant moi.😍 C'était le cou de foudre après la première <span>"HELLO WORD"</span>🤣🤓 et depuis je suis devenu développeur web et je n'arrête pas de le découvrir chaque jour parce que je peux développer en code, en CMS et en no-code aujourd'hui.🥰</p>
+              <div class="cover">
+                <div class="cover-content">
+                  <div class="source">
+                    <h4>author <br>Antonin RAZAFISON</h4>
+                  </div>
+                  <div class="title">
+                    <h2>De la <br>philosophie au <br> <span> Développement web</span></h2>
+                  </div>
+                </div>
+                <div class="introduction">
+                  <p>L'histoire de mes parcours. Comment j'ai rencontré ma passion du développement web</p>
+                </div>
+              </div>
+             </div>
+
           </div>
         </div>
       </div>
@@ -191,125 +212,94 @@
     <section id="skills">
       <div class="container">
         <h2>Mes <span>Compétences</span></h2>
-        <h3>Web codage</h3>
         <div class="skills">
-          <div class="skill-content">
-            <div id="skill-circle-1" class="skill">
-              <img src="./assets/medias/logos/html-5.png" alt="Logo html" />
-            </div>
-            <p>HTML 5</p>
+          <div class="list">
+              <div class="card2">
+                  <div class="content">
+                    <div class="back">
+                      <div class="back-content dev">
+                        <h3>Développement web</h3>
+                      </div>
+                    </div>
+                    <div class="front">                      
+                      <div class="front-content">
+                          <div class="skill">
+                            <img src="./assets/medias/logos/html-5.png" alt="Logo html">
+                          </div>
+                          <div class="skill">
+                            <img src="./assets/medias/logos/css.png" alt="Logo css">
+                          </div>
+                          <div class="skill">
+                            <img src="./assets/medias/logos/Javascript.png" alt="Logo JavaScript">
+                          </div>
+                          <div class="skill">
+                            <img src="./assets/medias/logos/php.png" alt="Logo php">
+                          </div>
+                          <div class="skill">
+                            <img src="./assets/medias/logos/mysql.png" alt="Logo mysql">
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="card2">
+                  <div class="content">
+                    <div class="back">
+                      <div class="back-content fram">
+                        <h3>Framwork/CMS/No-code</h3>
+                      </div>
+                    </div>
+                    <div class="front">                      
+                      <div class="front-content">
+                        <div class="skill">
+                          <img src="./assets/medias/logos/tailwind-css.png" alt="Logo tailwind-css">
+                        </div>
+                        <div class="skill">
+                          <img src="./assets/medias/logos/Bootstrap.png" alt="Logo Bootstrap">
+                        </div>
+                        <div class="skill">
+                          <img src="./assets/medias/logos/react.png" alt="Logo react">
+                        </div>
+                        <div class="skill">
+                          <img src="./assets/medias/logos/Wordpress.png" alt="Logo WordPress">
+                        </div>
+                        <div class="skill">
+                          <img src="./assets/medias/logos/bubble.png" alt="Logo bubble">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="card2">
+                  <div class="content">
+                    <div class="back">
+                      <div class="back-content design">
+                        <h3>Design</h3>
+                      </div>
+                    </div>
+                    <div class="front">                      
+                      <div class="front-content">
+                        <div class="skill">
+                          <img src="./assets/medias/logos/Canva.png" alt="Logo Canva">
+                        </div>
+                        <div class="skill">
+                          <img src="./assets/medias/logos/photoshop.png" alt="Logo photoshop">
+                        </div>
+                        <div class="skill">
+                          <img src="./assets/medias/logos/XD.png" alt="Logo Adobe XD">
+                        </div>
+                        <div class="skill">
+                          <img src="./assets/medias/logos/figma.png" alt="Logo figma">
+                        </div>
+                        <div class="skill">
+                          <img src="./assets/medias/logos/Illustrator.png" alt="Logo Illustrator">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
           </div>
-          <div class="skill-content">
-            <div id="skill-circle-2" class="skill">
-              <img src="./assets/medias/logos/css.png" alt="Logo CSS" />
-            </div>
-            <p>CSS 3</p>
-          </div>
-          <div class="skill-content">
-            <div id="skill-circle-3" class="skill">
-              <img
-                src="./assets/medias/logos/Javascript.png"
-                alt="Logo JavaScript"
-              />
-            </div>
-            <p>JavaScript</p>
-          </div>
-          <div class="skill-content">
-            <div id="skill-circle-4" class="skill">
-              <img src="./assets/medias/logos/php.png" alt="Logo PHP" />
-            </div>
-            <p>PHP</p>
-          </div>
-          <div class="skill-content">
-            <div id="skill-circle-5" class="skill">
-              <img src="./assets/medias/logos/mysql.png" alt="Logo mysql" />
-            </div>
-            <p>MySQL</p>
-          </div>
-        </div>
-
-        <h3>FramWorks / No-code / CMS</h3>
-        <div class="skills">
-          <div class="skill-content">
-            <div id="skill-circle-6" class="skill">
-              <img src="./assets/medias/logos/react.png" alt="Logo react" />
-            </div>
-            <p>ReactJs</p>
-          </div>
-          <div class="skill-content">
-            <div id="skill-circle-7" class="skill">
-              <img
-                src="./assets/medias/logos/tailwind-css.png"
-                alt="Logo tailwind-css"
-              />
-            </div>
-            <p>Tailwind-css</p>
-          </div>
-          <div class="skill-content">
-            <div id="skill-circle-8" class="skill">
-              <img
-                src="./assets/medias/logos/Bootstrap.png"
-                alt="Logo Bootstrap"
-              />
-            </div>
-            <p>Bootstrap</p>
-          </div>
-          <div class="skill-content">
-            <div id="skill-circle-9" class="skill">
-              <img src="./assets/medias/logos/bubble.png" alt="Logo Bubble" />
-            </div>
-            <p>Bubble</p>
-          </div>
-          <div class="skill-content">
-            <div id="skill-circle-10" class="skill">
-              <img
-                src="./assets/medias/logos/Wordpress.png"
-                alt="Logo WordPress"
-              />
-            </div>
-            <p>WordPress</p>
-          </div>
-        </div>
-
-        <h3>Design</h3>
-        <div class="skills">
-          <div class="skill-content">
-            <div id="skill-circle-11" class="skill">
-              <img src="./assets/medias/logos/figma.png" alt="Logo figma" />
-            </div>
-            <p>Figma</p>
-          </div>
-          <div class="skill-content">
-            <div id="skill-circle-12" class="skill">
-              <img
-                src="./assets/medias/logos/photoshop.png"
-                alt="Logo photoshop"
-              />
-            </div>
-            <p>Photoshop</p>
-          </div>
-          <div class="skill-content">
-            <div id="skill-circle-13" class="skill">
-              <img
-                src="./assets/medias/logos/Illustrator.png"
-                alt="Logo Illustrator"
-              />
-            </div>
-            <p>Illustrator</p>
-          </div>
-          <div class="skill-content">
-            <div id="skill-circle-14" class="skill">
-              <img src="./assets/medias/logos/XD.png" alt="Logo Adobe XD" />
-            </div>
-            <p>Adobe XD</p>
-          </div>
-          <div class="skill-content">
-            <div id="skill-circle-15" class="skill">
-              <img src="./assets/medias/logos/Canva.png" alt="Logo Canva" />
-            </div>
-            <p>Canva</p>
-          </div>
-        </div>
+      </div>
       </div>
     </section>
 
@@ -412,124 +402,6 @@
       </div>
     </section>
 
-    <!-- Services -->
-    <section id="services">
-      <div class="title">
-        <h2>Mes <span>services</span></h2>
-      </div>
-      <div class="services-content swiper">
-        <div class="card-wrapper">
-          <ul class="card-list swiper-wrapper">
-            <li class="card-item swiper-slide">
-              <a href="#" class="card-link">
-                <img
-                  class="card-image"
-                  src="./assets/medias/Experience/Experience-1.jpg"
-                  alt="Experience"
-                />
-                <p class="badge developpeur">Développement web</p>
-                <h3 class="card-title">
-                  Je développe des sites web statiques pour les personnes qui
-                  ont besoin de site vitrine.
-                </h3>
-                <button type="button" class="card-button">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </a>
-            </li>
-            <li class="card-item swiper-slide">
-              <a href="#" class="card-link">
-                <img
-                  class="card-image"
-                  src="./assets/medias/Experience/Experience-2.jpg"
-                  alt="Experience"
-                />
-                <p class="badge designer">Création de portefolio</p>
-                <h3 class="card-title">
-                  Je crée des portefolio pour ceux qui ont on besoin dans leur
-                  vie professionnelle.
-                </h3>
-                <button type="button" class="card-button">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </a>
-            </li>
-            <li class="card-item swiper-slide">
-              <a href="#" class="card-link">
-                <img
-                  class="card-image"
-                  src="./assets/medias/Experience/Experience-3.jpg"
-                  alt="Experience"
-                />
-                <p class="badge integrateur">Intégration web</p>
-                <h3 class="card-title">
-                  J'intègre vos maquettes web en les codants avec des langages
-                  de développement web.
-                </h3>
-                <button type="button" class="card-button">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </a>
-            </li>
-            <li class="card-item swiper-slide">
-              <a href="#" class="card-link">
-                <img
-                  class="card-image"
-                  src="./assets/medias/Experience/Experience-4.jpg"
-                  alt="Experience"
-                />
-                <p class="badge web-master">Mise à jour de site web</p>
-                <h3 class="card-title">
-                  Je peux faire le mise à jour de votre site web pour que vos
-                  contenus soit à jour.
-                </h3>
-                <button type="button" class="card-button">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </a>
-            </li>
-            <li class="card-item swiper-slide">
-              <a href="#" class="card-link">
-                <img
-                  class="card-image"
-                  src="./assets/medias/Experience/Experience-5.jpg"
-                  alt="Experience"
-                />
-                <p class="badge tueur">Intégration de contenus web</p>
-                <h3 class="card-title">
-                  Je suis en mésure d'intégrer vos nouveaux contenus dans votre
-                  site web existant.
-                </h3>
-                <button type="button" class="card-button">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </a>
-            </li>
-            <li class="card-item swiper-slide">
-              <a href="#" class="card-link">
-                <img
-                  class="card-image"
-                  src="./assets/medias/Experience/Experience-6.jpg"
-                  alt="Experience"
-                />
-                <p class="badge tueur">Web designer</p>
-                <h3 class="card-title">
-                  Je peux vous créer un page web bien designé et animé pour une
-                  bonne expérience utilisateur.
-                </h3>
-                <button type="button" class="card-button">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </a>
-            </li>
-          </ul>
-          <div class="swiper-pagination"></div>
-          <div class="button swiper-button-prev"></div>
-          <div class="button swiper-button-next"></div>
-        </div>
-      </div>
-    </section>
-
     <!-- Footer -->
     <footer id="contact">
       <div class="container">
@@ -560,69 +432,6 @@
                   toninrazafison@gmail.com
                 </p>
               </div>
-            </div>
-            <div class="formulaire-contact">
-              <form method="post">
-                <div class="formulaire">
-                  <div class="name">
-                    <div>
-                      <label for="#nom">
-                        <input type="text" id="nom" placeholder="Ton Nom"/>
-                      </label>
-                    </div>
-                    <div>
-                      <label for="#prenom">
-                        <input
-                          type="text"
-                          id="prenom"
-                          placeholder="Ton prénom"
-                        />
-                      </label>
-                    </div>
-                  </div>
-                  <div class="objet">
-                    <div>
-                      <label for="#objet">
-                        <input
-                          type="text"
-                          id="objet"
-                          placeholder="Votre sujet"
-                        />
-                      </label>
-                    </div>
-                  </div>
-                  <div class="message">
-                    <div>
-                      <label for="#message">
-                        <textarea
-                          name="sujet"
-                          id="message"
-                          placeholder="Votre message"
-                        ></textarea>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="submit">
-                    <a href="#" class="button">
-                      <button type="button" class="animated-button">
-                        <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                          ></path>
-                        </svg>
-                        <span class="text">Envoyer le message</span>
-                        <span class="circle"></span>
-                        <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                          ></path>
-                        </svg>
-                      </button>
-                                              
-                    </a>
-                  </div>
-                </div>
-              </form>
             </div>
           </div>
         </div>

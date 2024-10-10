@@ -369,14 +369,14 @@ h1 #name {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 40px;
+    /* row-gap: 40px; */
 }
 
 .info-perso {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .info-content {
@@ -465,58 +465,9 @@ h1 #name {
       transform: translateY(0%);
     }
   }
-  
-
-.activites {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.activite {
-    margin: 0 20px 20px 0;
-    height: fit-content;
-    padding: 5px 20px;
-    border: #ffac116c solid 0.5px;
-}
-
-.activite .number {
-    color: #ffab11;
-    font-size: 50px;
-    font-weight: 600;
-}
-
-.act {
-    display: flex;
-    align-items: center;
-}
-
-.activite-info {
-    display: flex;
-    justify-content: center;
-}
-
-.activite-info hr {
-    border: none;
-    background-color: #8f8d8d;
-    margin-right: 10px;
-    margin-top: 8px;
-    width: 35px;
-    height: 2px;
-}
-
-@media screen and (max-width: 1170px) {
-    .activites {
-        flex-direction: column;
-    }
-}
 @media screen and (max-width: 768px) {
     .info-perso {
         justify-content: center;
-    }
-    .activites {
-        flex-direction: row;
     }
     .cv a {
         display: flex;
@@ -542,65 +493,21 @@ h1 #name {
     z-index: 2;
 }
 
-.skills {
-    color: #ffffff;
+#skills {
     width: 100%;
-    height: fit-content;
+}
+
+.skills {
+    width: 100%;
+}
+
+.skills .list {
+    width: 100%;
     display: flex;
-    border-bottom: dashed 2px #ffab11;
-        padding-bottom: 10px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    position: relative;
-    z-index: 2;
-}
-
-.skill-content {
-    row-gap: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.skill-content p{
-    text-align: center;
-}
-
-.skill {
-    border-radius: 50%;
-    margin: 10px;
-    width: 60px;
-    height: 60px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .skill img {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-  }
-
-@media screen and (max-width: 768px) {
-    #skill {
-        height: fit-content;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    #skill {
-        height: 500px;
-    }
-    h2 {
-        font-size: 30px;
-    }
-    .skills {
-        border-bottom: dashed 2px #ffab11;
-        padding-bottom: 10px;
-    }
+    padding: 30px 0;
 }
 
 /* *************** Services ************** */
@@ -902,12 +809,14 @@ footer .content {
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     height: fit-content;
 }
 .footer-content .contact {
-    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 .coordonnees h3 {
     padding: 10px;
@@ -929,46 +838,6 @@ footer .content {
     margin-right: 10px;
 }
 
-.formulaire-contact {
-    width: 50%;
-}
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-form .name {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-form .name input {
-    width: 250px;
-}
-
-input {
-    width: 100%;
-    height: 30px;
-    margin-bottom: 20px;
-    background-color: #212121;
-    color: #8f8d8d;
-    padding: 0 10px;
-    border: none;
-    border-radius: 50px;
-}
-
-textarea {
-    width: 100%;
-    height: 150px;
-    background-color: #212121;
-    color: #8f8d8d;
-    padding: 10px 10px;
-    border: none;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
 
 /* From Uiverse.io by gharsh11032000 */ 
 .animated-button {

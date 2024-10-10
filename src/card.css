@@ -1,0 +1,277 @@
+/* book */
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+.book {
+    position: relative;
+    border-radius: 10px;
+    max-width: 400px;
+    height: fit-content;
+    background-color: rgb(245, 245, 245);
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+  }
+
+  .text {
+    padding: 30px 5px 30px 50px;
+    font-size: 10px;
+    text-align: justify;
+  }
+  .text span {
+    color: #ffab11;
+  }
+  
+  .cover {
+    top: 0;
+    position: absolute;
+    background: url(../assets/medias/Mes-photos/Moi-1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .cover-content {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cover-content .source {
+    height: 100px;
+  }
+
+  .cover-content h4 {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.cover-content .title {
+    height: 340px;
+}
+
+.cover-content .title h2{
+    font-family: "Pinyon Script", cursive;
+    font-size: 30px;
+  }
+
+  .introduction p {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .book:hover .cover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-80deg);
+    -ms-transform: rotatey(-80deg);
+    transform: rotatey(-80deg);
+  }
+  
+
+/* card 2 */
+.card2 {
+    overflow: visible;
+    width: 300px;
+    height: 450px;
+    padding-bottom: 30px;
+  }
+  
+  .card2 .content {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms;
+    box-shadow: 0px 0px 10px 1px #000000ee;
+    border-radius: 10px;
+  }
+  
+  .front, .back {
+    background-color: #151515;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .back {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .back::before {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 160px;
+    height: 160%;
+    background: linear-gradient(90deg, transparent, #F09819, #F09819, #F09819, #F09819, transparent);
+    animation: rotation_481 5000ms infinite linear;
+  }
+
+  .card2 .content .back .dev {
+    background: url(../assets/medias/Skills/dev.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .back-content {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    /* background-color: #151515; */
+    border-radius: 20px;
+    /* color: #F09819; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .card2 .content .back .fram {
+    background: url(../assets/medias/Skills/framwork.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .card2 .content .back .design {
+    background: url(../assets/medias/Skills/Design.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .back-content h3 {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffab11;
+    font-size: 1.5rem;
+  }
+  
+  .card2:hover .content {
+    transform: rotateY(180deg);
+  }
+  
+  @keyframes rotation_481 {
+    0% {
+      transform: rotateZ(0deg);
+    }
+  
+    0% {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  .front {
+    transform: rotateY(180deg);
+    color: white;
+    height: 100%;
+  }
+  
+  .front .front-content {
+    background-color: rgba(238, 238, 238, 0.185);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .front-content .item {
+    width: 130px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.795);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    padding: 0 10px 0 10px;
+  }
+
+  .front-content .item:hover {
+    transform: scale(1.04);
+  }
+
+  .front-content .skill img {
+    width: 80px;
+    filter: drop-shadow(0px 0px 15px #ffab11);
+  }
+  
+  .front-content .item .content {
+    height: fit-content;
+  }
+
+  .front-content .item .content .title,
+  .front-content .item .content .description{
+    transform: rotateY(180deg);
+  }
+
+  .front-content .item .content .title h4 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .front-content .item .content .description p {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .card2 p {
+    color: #eee;
+  }
+
+
