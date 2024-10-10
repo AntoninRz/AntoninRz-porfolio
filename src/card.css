@@ -97,6 +97,7 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: 15px;
+    font-weight: bold;
     width: 300px;
     text-align: center;
   }

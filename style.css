@@ -372,6 +372,10 @@ h1 #name {
     /* row-gap: 40px; */
 }
 
+#info-perso .title {
+    height: 80px;
+}
+
 .info-perso {
     width: 100%;
     display: flex;
@@ -530,14 +534,15 @@ h1 #name {
 
 .project {
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* border-radius: 50px; */
     width: 100%;
-    height: 250px;
+    height: 150px;
 }
 
 .proj-1 {
-    border-right: #ffab11 2px solid;
-    background-image: url(./assets/medias/Projets/CIW.jpg);
+    background-image: url(./assets/medias/Projets/kaly.jpg);
 }
 .proj-1:hover{
     .pap-1 {
@@ -546,8 +551,7 @@ h1 #name {
 }
 
 .proj-2 {
-    border-right: #ffab11 2px solid;
-    background-image: url(./assets/medias/Projets/Branding.jpg);
+    background-image: url(./assets/medias/Projets/Grafikaly.jpg);
 }
 .proj-2:hover{
     .pap-2 {
@@ -556,7 +560,6 @@ h1 #name {
 }
 
 .proj-3 {
-    border-right: #ffab11 2px solid;
     background-image: url(./assets/medias/Projets/Hero-slide.jpg);
 }
 .proj-3:hover{
@@ -575,7 +578,6 @@ h1 #name {
 }
 
 .proj-5 {
-    border-right: #ffab11 2px solid;
     background-image: url(./assets/medias/Projets/Permaculture.jpg);
 }
 .proj-5:hover{
@@ -585,7 +587,6 @@ h1 #name {
 }
 
 .proj-6 {
-    border-right: #ffab11 2px solid;
     background-image: url(./assets/medias/Projets/Pirus.jpg);
 }.proj-6:hover{
     .pap-6 {
@@ -594,8 +595,7 @@ h1 #name {
 }
 
 .proj-7 {
-    border-right: #ffab11 2px solid;
-    background-image: url(./assets/medias/Projets/web-app.jpg);
+    background-image: url(./assets/medias/Projets/Branding.jpg);
 }.proj-7:hover{
     .pap-7 {
         display: flex;
@@ -603,7 +603,7 @@ h1 #name {
 }
 
 .proj-8 {
-    background-image: url(./assets/medias/Projets/Portefolio.jpg);
+    background-image: url(./assets/medias/Projets/CIW.jpg);
 }.proj-8:hover{
     .pap-8 {
         display: flex;
@@ -613,19 +613,20 @@ h1 #name {
 
 .paperclips {
     display: none;
+    width: 100%;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
 
 .info {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .info-projet {
@@ -733,93 +734,3 @@ footer .content {
     margin-right: 10px;
 }
 
-
-/* From Uiverse.io by gharsh11032000 */ 
-.animated-button {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  padding: 10px 36px;
-  margin-bottom: 30px;
-  border: 4px solid;
-  border-color: transparent;
-  font-size: 16px;
-  background-color: inherit;
-  border-radius: 100px;
-  font-weight: 600;
-  color: #f6f6f6;
-  box-shadow: 0 0 0 2px #ffab11;
-  cursor: pointer;
-  overflow: hidden;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.animated-button svg {
-  position: absolute;
-  width: 24px;
-  fill: #ffab11;
-  z-index: 9;
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.animated-button .arr-1 {
-  right: 16px;
-}
-
-.animated-button .arr-2 {
-  left: -25%;
-}
-
-.animated-button .circle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
-  background-color: #ffab11;
-  border-radius: 50%;
-  opacity: 0;
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.animated-button .text {
-  position: relative;
-  z-index: 1;
-  transform: translateX(-12px);
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.animated-button:hover {
-  box-shadow: 0 0 0 12px transparent;
-  color: #212121;
-  border-radius: 50px;
-}
-
-.animated-button:hover .arr-1 {
-  right: -25%;
-}
-
-.animated-button:hover .arr-2 {
-  left: 16px;
-}
-
-.animated-button:hover .text {
-  transform: translateX(12px);
-}
-
-.animated-button:hover svg {
-  fill: #212121;
-}
-
-.animated-button:active {
-  scale: 0.95;
-  box-shadow: 0 0 0 4px #ffac11;
-}
-
-.animated-button:hover .circle {
-  width: 220px;
-  height: 220px;
-  opacity: 1;
-}
